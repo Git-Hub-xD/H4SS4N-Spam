@@ -3,7 +3,7 @@ from telethon import events, Button
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
 
-HELP_STRING = f"H4SS4N ꭙ Sᴘᴀᴍ 🫧 ʜᴇʟᴘ ᴍᴇɴᴜ ♡︎\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴜᴛᴛᴏɴ ғᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: H4SS4N ꭙ Sᴘᴀᴍ 🫧**"
+HELP_STRING = f"ʜ4ss4ɴ ꭙ Sᴘᴀᴍ 🫧 ʜᴇʟᴘ ᴍᴇɴᴜ ♡︎\n\n» **ᴄʟɪᴄᴋ ᴏɴ ʙᴜᴛᴛᴏɴ ғᴏʀ ʜᴇʟᴘ**\n» **ᴅᴇᴠᴇʟᴏᴘᴇʀ: ʜ4ss4ɴ ꭙ Sᴘᴀᴍ 🫧**"
 
 HELP_BUTTON = [
     [
@@ -15,10 +15,10 @@ HELP_BUTTON = [
     ],
     [
       Button.url("⚜️ ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚜️", "https://t.me/llxHKxll"),
-      Button.url("✨ sᴜᴘᴘᴏʀᴛ ✨", "https://t.me/KaisenWorld")
+      Button.url("✨ ᴏᴡɴᴇʀ ✨", "https://t.me/H4SS4NP4P4")
     ],
   [   
-      Button.inline("ɴᴇᴡ ᴄᴏᴍᴍᴀɴᴅ", data="yash")
+      Button.inline("ᴇxᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅs", data="yash")
       
   ]
 ]
@@ -38,7 +38,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://telegra.ph/file/87efc7ef02936e9e53d79.jpg",
+              "https://telegra.ph/file/f098d4e87cd29f185ea26.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -167,7 +167,7 @@ async def helpback(event):
               ],
               [
                 Button.url("⚜️ ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚜️", "https://t.me/llxHKxll"),
-                Button.url("🦋 sᴜᴘᴘᴏʀᴛ 🦋", "https://t.me/KaisenWorld")
+                Button.url("🦋 ᴏᴡɴᴇʀ 🦋", "https://t.me/H4SS4NP4P4")
               ]
             ]
           )

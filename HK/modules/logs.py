@@ -42,14 +42,14 @@ async def logs(legend):
         fetch = await legend.reply(f"__Fetching Logs...__")
     
         with open("HKLogs.txt", "w") as logfile:
-            logfile.write("🦋⃟ᬊᴠ‌ɪ‌ᴘ‌•༎꯭ࠫ𝆺꯭𝅥 ᥫ꯭ 𝗛🇰‌๛❣𓆩ꭙ🇩‌𓆪ꪾ𐏓 ⃪༏‌⃪🔥᪵᪳❛ [ Bot Logs ]\n\n" + logs)
+            logfile.write("ʜᴘ × ʟᴏɢs [ Bot Logs ]\n\n" + logs)
 
         end = datetime.now()
         ms = (end-start).seconds
         await asyncio.sleep(1)
 
         try:
-            await X1.send_file(legend.chat_id, "AltLogs.txt", caption=f"⚡ **ʜᴋ x sᴘᴀᴍ ʟᴏɢs** ⚡\n  » **ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:** `{ms} ꜱᴇᴄᴏɴᴅꜱ`")
+            await X1.send_file(legend.chat_id, "AltLogs.txt", caption=f"⚡ **H4SS4N x sᴘᴀᴍ ʟᴏɢs** ⚡\n  » **ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:** `{ms} ꜱᴇᴄᴏɴᴅꜱ`")
             await fetch.delete()
         except Exception as e:
             await fetch.edit(f"An Exception Occured!\n\n**ERROR:** {str(e)}")

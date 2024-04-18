@@ -9,10 +9,10 @@ START_BUTTON = [
     ],
     [
         Button.url("⚜️ ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚜️", "https://t.me/llxHKxll"),
-        Button.url("🍁 ᴜᴘᴅᴀᴛᴇs 🍁", "https://t.me/XovaUpdates")
+        Button.url("🍁 ᴏᴡɴᴇʀ 🍁", "https://t.me/H4SS4NP4P4")
     ],
     [
-        Button.url("✨ ᴄᴏᴅᴇʀ ✨", "https://t.me/llxHKxll")
+        Button.url("✨ ғᴏʀ ᴜᴘᴅᴀᴛᴇs ✨", "https://t.me/XovaAssociation")
     ]
 ]
 
@@ -35,7 +35,7 @@ async def start(event):
         TEXT = f"**ʜᴇʏ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})**\n"
         await event.client.send_file(
             event.chat_id,
-            "https://telegra.ph/file/87efc7ef02936e9e53d79.jpg",
+            "https://telegra.ph/file/f098d4e87cd29f185ea26.jpg",
             caption=TEXT,
             buttons=START_BUTTON
         )

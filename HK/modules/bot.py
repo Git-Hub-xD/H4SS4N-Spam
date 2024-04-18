@@ -21,10 +21,10 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        jarvis = await e.reply(f"Hᴋ ꭙ Sᴘᴀᴍ 🫧")
+        jarvis = await e.reply(f"ʜ4ss4ɴ ꭙ Sᴘᴀᴍ 🫧")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await jarvis.edit(f"Hᴋ ꭙ Sᴘᴀᴍ 🫧\n» `{mp} ᴍꜱ`")
+        await jarvis.edit(f"ʜ4ss4ɴ ꭙ Sᴘᴀᴍ 🫧\n» `{mp} ᴍꜱ`\nʏᴏ... ʙᴏᴛ ᴘɪɴɢᴇᴅ ! ")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -39,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`H4SS4N ꭙ Sᴘᴀᴍ 🫧 ɪs sᴛᴀʀᴛɪɴɢ...`")
+        await e.reply(f"`ʜ4ss4ɴ ꭙ Sᴘᴀᴍ 🫧 ɪs sᴛᴀʀᴛɪɴɢ...`")
         try:
             await X1.disconnect()
         except Exception:
@@ -127,7 +127,7 @@ async def addsudo(event):
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("»Hᴋ ꭙ Sᴘᴀᴍ 🫧 ʙᴄ ʙᴀs ʜᴋ ʜɪ sᴜᴅᴏ ᴅᴇ sᴀᴋᴛᴀ ʜᴀɪ...")
+        await event.reply("»ʜ4ss4ɴ ꭙ Sᴘᴀᴍ 🫧 ʙᴄ ʙᴀs ʜ4ss4ɴ ʜɪ sᴜᴅᴏ ᴅᴇ sᴀᴋᴛᴀ ʜᴀɪ...")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
